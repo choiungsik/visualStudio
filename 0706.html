@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <!--전체 스타일을 나타내는 에스터리스크 *-->
+    <style>
+        *{
+            color: green;
+        }
+        /* 전체 스타일을 나타내는 에스터리스크 */
+        .css1{
+            color: yellow;
+        }
+
+        #css2{
+            color: blue;
+        }
+
+        p{
+            font-family: 굴림;
+            font-size: 50px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* 자식선택자를 통해 설정하는 계층선택자 > */
+        ul>li{
+            color: blue;
+        }
+
+        .rule1>li{
+            color: red;
+        }
+        .p1{
+            font-size: 30px;
+        }
+        div{
+            font-size: 15px;
+        }
+        .p2{
+            font-size: 2em;
+        }
+        /* 보모사이즈의 배수가 되는 em단위 
+        이건 반응형 앱 같은 느낌으로 바뀌는 크기에 맞춰서 바꿀 수 있음*/
+
+        /* 반응선택자 */
+        summary{
+            color: red;
+        }
+        /* 마우스를 올렸을 때 바뀜 */
+        summary:hover{
+            color: blue;
+        }
+        /* 마우스를 클릭했을 때 바뀜 */
+        summary:active{
+            color: brown;
+        }
+        /* 명시도 *(0), 타일(1), 클래스(10), 아이디(100)으로 값이 높은 값이 우선순위를 가진다.
+        단 body쪽에서 직접 입력한 속성은 가장 우선적으로 적용된다. */
+    </style>
+</head>
+<body>
+    <h1>김미희</h1>
+    <br>
+    <p>정형</p>
+    <h1>CSS</h1>
+   <p>웹 페이지를 꾸며주는 스타일 시트 언어</p>
+   <ul>
+      <li class = "css1">CSS 기본구조</li>
+      <li>CSS 선택자</li>
+      <li id = "css2">CSS 스타일</li>
+   </ul>
+
+   <details>
+        <summary>
+            올바른 개발자 생활
+        </summary>
+
+        <ul>
+            <li>쉬는 시간에 5분정도 먼 곳을 바라본다.</li>
+            <li>1시간마다 스트레칭을 한다.</li>
+            <li>거북목이 되지않도록 목을 편다.</li>
+        </ul>
+   </details>
+
+   <strong> 연수생 수칙</strong>
+   <ol class = "rule1">
+       <li>지각하지않기</li>
+       <li>결석하지않기</li>
+       <span>(불가피할 땐 꼭 담당연구원에게 미리 말하기)</span>
+       <li>복습하기</li>
+
+   </ol>
+
+   <div>
+    <strong> 연수생 수칙</strong>
+    <ol>
+        <li>지각하지않기</li>
+        <li>결석하지않기</li>
+        <span>(불가피할 땐 꼭 담당연구원에게 미리 말하기)</span>
+        <li>복습하기</li>
+
+    </ol>
+    </div>
+
+    <p class ="p1">안녕하세요</p>
+    <div>
+    <p class ="p2">안녕하세요.</p>
+</div>
+</body>
+</html>
